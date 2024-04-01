@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fff0f6;
+  font-family: "Protest Riot", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat-img {
+  width: 30rem;
+  height: 30rem;
+  margin-bottom: 2rem;
+  border-radius: 120px;
+}
+
+.title {
+  background-color: #433054b2;
+  border-radius: 20px;
+  font-size: 6rem;
+  color: #ff569ffc;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.btn {
+  padding: 1.5rem 2.5rem;
+  border: none;
+  border-radius: 20px;
+
+  color: white;
+  font-family: "Protest Riot", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn--yes {
+  background-color: #40c057;
+}
+
+.btn--no {
+  background-color: #f03e3e;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: #EBEBEB;
+  padding: 25px;
+}
+
+#flexbox-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: #F45B69;
+  transform: rotate(-45deg);
+  position: absolute;
+  transition: 
+}
+
+.heart::before {
+  background-color: #F45B69;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 25px;
+}
+
+.heart::after {
+  background-color: #F45B69;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  content: "";
+  top: -25px;
+  left: 0;
+}
+
+.animation {
+  animation: MoveDown 5s linear infinite;
+  position: absolute;
+  bottom: 0;
+}
+
+@keyframes MoveDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+#column2 .animation {
+  animation-delay: -1s;
+}
+
+#column3 .animation {
+  animation-delay: -2s;
+}
